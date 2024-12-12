@@ -1698,6 +1698,12 @@ a, button{
 
 /*login learning section */
 ._online_learning_wrapper {
+    display: none;
+}
+._online_learning_wrapper.displayLogin {
+    display: block;
+}
+._online_learning_wrapper {
     height: 100vh;
     overflow: hidden;
 }
