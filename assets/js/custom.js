@@ -35,8 +35,9 @@ let config1 = {
 
 new Splide('._testimonial_podcast_slider', config1).mount();
 
-let login_btn = document.querySelector("._header_podcast_navbar_r8_login");
-let login_section = document.querySelector("#login_section");
+// login button
+let login_btn = document.querySelector("._header_podcast_navbar_r8_signup");
+let login_section = document.querySelector("#login_div");
 login_btn.addEventListener("click", displayLoginBtn);
 
 function displayLoginBtn(){
