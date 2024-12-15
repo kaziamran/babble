@@ -37,14 +37,28 @@ new Splide('._testimonial_podcast_slider', config1).mount();
 
 // login button
 let login_btn = document.querySelector("._header_podcast_navbar_r8_signup");
-let login_section = document.querySelector("#login_div");
-login_btn.addEventListener("click", displayLoginBtn);
+let login_signup_box = document.querySelector("#login_signup_box");
+let signuplink = document.querySelector("._signUp_link_tag");
+let loginlink = document.querySelector("._login_link_tag");
+let closeBtn = document.querySelector("._close_btn");
 
-function displayLoginBtn(){
-    login_section.classList.add("displayLogin");
+login_btn.addEventListener("click", displayLoginSignupBox);
+signuplink.addEventListener("click", displaySignup);
+loginlink.addEventListener("click", displayLogin);
+closeBtn.addEventListener("click", removeBox)
+
+function displayLoginSignupBox() {
+    login_signup_box.classList.add("displayLoginSignup");
 }
-
-
+function displaySignup() {
+    login_signup_box.classList.add("active");
+}
+function displayLogin() {
+    login_signup_box.classList.remove("active");
+}
+function removeBox() {
+    login_signup_box.classList.remove("displayLoginSignup")
+}
 
 
 

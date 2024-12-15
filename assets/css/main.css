@@ -1695,7 +1695,12 @@ a, button{
 /*login*/
 ._login_box_wrapper {
     display: none;
-    height: 100vh;
+    /* transform: scale(0); */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 524px;
+    padding: 0 20px;
     width: fit-content;
     margin: 0 auto;
     background: transparent;
@@ -1705,15 +1710,44 @@ a, button{
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    transition: transform .4s ease, height .2s ease;
 }
-._login_box_wrapper.displayLogin {
+._login_box_wrapper.displayLoginSignup {
     display: flex;
+    /* transform: scale(1); */
 }
-._login_wrap {
-    display: flex;
-    align-items: center;
+._login_box_wrapper.active {
+    height: 640px;
 }
-._login_close_btns {
+._login_box_wrapper ._login_link {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+._login_box_wrapper.active ._login_link {
+    transition: none;
+    transform: translateX(-490px);
+}
+._login_box_wrapper ._signup_link {
+    transition: none;
+    position: absolute;
+    transform: translateX(490px);
+}
+._login_box_wrapper.active ._signup_link {
+    transition: none;
+    transform: translateX(0px);
+}
+
+._login_link_head {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    color: #032E32;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+._close_btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1725,29 +1759,26 @@ a, button{
     height: 30px;
     border-radius: 0px 5px;
 }
-._login_close_btn {
+._close_btn_tag {
     background-color: transparent;
     border: 0;
 }
-._login_close_btn svg {
+._close_btn_tag svg {
     width: 11px;
-}
-._login_box {
-    padding: 28px 24px 10px;
 }
 ._login_inpt1 label, ._login_inpt2 label {
     font-family: 'Plus Jakarta Sans';
     font-weight: 600;
     font-size: 16px;
     line-height: 1.2;
-    color: #032E32;
-    margin-bottom: 17px;
+    color:#032E32;
+    margin-bottom: 14px;
 }
 ._login_inpt {
     border: 1px solid #D4DDDD;
     border-radius: 6px;
     width: 100%;
-    height: 54px;
+    height: 50px;
     padding: 0 17px;
     color: #000;
     outline: 0;
@@ -1763,7 +1794,7 @@ a, button{
     color: #4F5A5A;
 }
 ._login_inpt1, ._login_inpt2 {
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 ._login_inpt2_forgot {
@@ -1786,7 +1817,7 @@ a, button{
     background: #B5ED3D;
     border-radius: 6px; 
     width: 100%;
-    height: 54px;
+    height: 50px;
     font-family: 'Plus Jakarta Sans';
     font-weight: 600;
     font-size: 16px;
@@ -1827,12 +1858,12 @@ a, button{
     align-items: center;
     justify-content: center;
 }
-._login_account_link {
+._login_link_tag, ._signUp_link_tag {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
     margin-left: 8px;
-    color: #1616e9;
+    color:#1616e9;
 }
 ._login_or_divider {
     border-top: 1px solid #D4DDDD;
