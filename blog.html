@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bable | podcast landing page</title>
+    <!-- https://codehalweb.com/ -->
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Favicon Css -->
+    <link rel="shortcut icon" href="assets/img/Mask group (1).png"/>
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!--Splide-->
+    <link rel="stylesheet" href="assets/css/splide-core.min.css">
+    <!-- Custom Css-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <!--header podcast wrapper -->
+		<header class="_header_podcast_wrapper">
+			<nav class="navbar navbar-expand-lg navbar-dark _header_podcast_nav">
+				<div class="container">
+					<div class="_header_logo">
+						<a class="navbar-brand" href="index.html">
+							<img src="assets/img/header-logo.svg" alt="image" class="_logo_img">
+						</a>
+					</div>
+					<button class="navbar-toggler _toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse _header_podcast_navbar" id="navbarNav">
+						<ul class="navbar-nav _header_podcast_navbar_ul">
+							<li class="nav-item dropdown _header_podcast_navbar_li">
+								<a href="index.html" class="_header_podcast_navbar_itm">Home</a>	
+							</li>
+							<li class="nav-item dropdown _header_podcast_navbar_li">
+								<a href="#0" class="_header_podcast_navbar_itm">Trending</a>	
+							</li>
+							<li class="nav-item dropdown _header_podcast_navbar_li">
+								<a class="nav-link dropdown-toggle _header_podcast_navbar_itm" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Category
+									<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" fill="none" viewBox="0 0 10 6">
+										<path stroke="#665F73" stroke-linecap="round" stroke-linejoin="round" d="m1 1 4 4 4-4"/>
+									</svg>																																												  
+								</a>
+								<ul class="dropdown-menu _header_podcast_navbar_itm_dropd" aria-labelledby="navbarDropdown1">
+								  <li class="_header_podcast_navbar_itm_dropd_li"><a class="dropdown-item" href="#">Catego 1</a></li>
+								  <li class="_header_podcast_navbar_itm_dropd_li"><a class="dropdown-item" href="#">Catego 2</a></li>
+								  <li class="_header_podcast_navbar_itm_dropd_li"><a class="dropdown-item" href="#">Catego 3</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown _header_podcast_navbar_li">
+								<a href="blog.html" class="_header_podcast_navbar_itm">Blog</a>	
+							</li>
+						</ul>
+						<ul class="navbar-nav _header_podcast_navbar_r8_ul">
+							<li class="nav-item dropdown _header_podcast_navbar_r8_li1">
+								<a href="#login_section" class="_header_podcast_navbar_r8_signup">Login</a>	
+							</li> 
+						</ul>                          
+					</div>                                                                                                               
+				</div>
+			</nav>  
+			<div class="_login_box_wrapper" id="login_signup_box">
+				<div class="_close_btn">
+					<button class="_close_btn_tag">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 30 30">
+							<path stroke="#fff" stroke-linecap="round" stroke-width="2" d="M29 29 1 1m28 0L1 29"/>
+						</svg>										  
+					</button>
+				</div>
+
+				<div class="_login_link">
+					<h2 class="_login_link_head">login</h2>
+					<form action="#" class="_login_box">
+						<div class="_login_box_field">       
+							<div class="_login_inpt1">
+								<label for="">Email address or phone number</label>
+								<input type="text" placeholder="Email address or phone number" class="_login_inpt" required>
+							</div>
+							<div class="_login_inpt2">
+								<label for="">Password</label>
+								<div class="_login_inpt2_forgot">
+									<input type="text" placeholder="Password" class="_login_inpt" required>
+									<button class="_login_inpt2_btn">Forgot?</button>
+								</div>
+							</div>
+							<div class="_login_submit_btn">
+								<button class="_login_submit">Login</button>
+							</div>
+						</div>
+					</form>
+					<div class="_login_box_wrap_bottom">
+						<div class="_login_or_divider">
+							<span></span>
+							<p class="_login_or_divider_txt">OR</p>
+						</div>
+						<div class="_login_continue_google">
+							<button class="_login_continue_google_btn">
+								<img src="assets/img/login-google-ic.svg" alt="icon" class="_login_continue_google_btn_ic">
+								Continue with Google
+							</button>
+						</div>
+						<div class="_login_account">
+							<p class="_login_account_para">Don’t have an account? </p> 
+							<a href="#" class="_signUp_link_tag">Sign Up</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="_signup_link">
+					<h2 class="_login_link_head">Signup</h2>
+					<form action="#" class="_login_box">
+						<div class="_login_box_field"> 
+							<div class="_login_inpt1">
+								<label for="">Username</label>
+								<input type="text" placeholder="Username" class="_login_inpt" required>
+							</div>      
+							<div class="_login_inpt1">
+								<label for="">Email address or phone number</label>
+								<input type="text" placeholder="Email address or phone number" class="_login_inpt" required>
+							</div>
+							<div class="_login_inpt2">
+								<label for="">Password</label>
+								<div class="_login_inpt2_forgot">
+									<input type="text" placeholder="Password" class="_login_inpt" required>
+								</div>
+							</div>
+							<div class="_login_submit_btn">
+								<button class="_login_submit">Signup</button>
+							</div>
+						</div>
+					</form>
+					<div class="_login_box_wrap_bottom">
+						<div class="_login_or_divider">
+							<span></span>
+							<p class="_login_or_divider_txt">OR</p>
+						</div>
+						<div class="_login_continue_google">
+							<button class="_login_continue_google_btn">
+								<img src="assets/img/login-google-ic.svg" alt="icon" class="_login_continue_google_btn_ic">
+								Continue with Google
+							</button>
+						</div>
+						<div class="_login_account">
+							<p class="_login_account_para">Already have an account?</p> 
+							<a href="#" class="_login_link_tag">Login</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="_header_podcast_cont_wrap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-xl-6 col-lg-6 col-md-12">
+							<div class="_header_podcast_left_wrap">
+								<div class="_header_podcast_left_img">
+									<img src="assets/img/header-left-img.png" alt="image" 
+									class="_header_podcast_left_img_tag">
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6 col-md-12">
+							<div class="_header_podcast_r8_wrap">
+								<h1 class="_header_podcast_r8_txt">
+									A new era of podcasting for you
+								</h1>
+								<p class="_header_podcast_r8_para">Rebuilt for simplicity
+									 and speed, so you can spend more time discovering
+									  and listening to great podcasts.
+								</p>
+
+								<div class="_header_podcast_r8_btns">
+									<div class="_header_podcast_r8_btn01">
+										<a href="#0" class="_header_podcast_r8_link">Get Started</a>
+									</div>
+									<div class="_header_podcast_r8_btn02">
+										<button class="_header_podcast_r8_btn">Listen now
+											<span class="_header_podcast_r8_btn_sp">
+												<svg xmlns="http://www.w3.org/2000/svg" width="6" height="8" fill="none" viewBox="0 0 6 8">
+													<path fill="#fff" d="M5.85 3.913a.1.1 0 0 1 0 .174l-5.7 3.29A.1.1 0 0 1 0 7.292V.709A.1.1 0 0 1 .15.623l5.7 3.29Z"/>
+												</svg>											  
+											</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--header podcast wrapper end-->
+</body>
+</html>
