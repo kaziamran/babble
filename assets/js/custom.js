@@ -60,6 +60,12 @@ function removeBox() {
     login_signup_box.classList.remove("displayLoginSignup")
 }
 
+// blog page 
+// author name sorting
+
+let authorName = document.querySelector("#author");
+
+
 
 
 

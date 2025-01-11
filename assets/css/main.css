@@ -1892,6 +1892,27 @@ a, button{
 }
 /*login learning section end*/
 
+/* blog page */
+._blog_podcast_wrapper {
+    padding: 80px 0px;
+    background-color:rgb(247, 236, 236);
+    overflow: hidden;
+}
+._blog_content_title_podcast {
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #0d0c0c;
+}
+._blog_content_podcast_boxes {
+    margin-top: 40px;
+}
+._blog_content_podcast_box {
+    margin-bottom: 28px;
+}
+
+
 /*------------------
     Variable 
 ------------------*/
